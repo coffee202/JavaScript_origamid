@@ -31,6 +31,7 @@ export default class initModal {
     if(this.botaoAbrir && this.botaoFechar && this.containerModal){
        this.addModalEvent(); 
     }
+    return this
   }
 
   cliqueForaModal(event) {
