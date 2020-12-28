@@ -24,14 +24,14 @@ export default class initModal {
   addModalEvent(){
     this.botaoAbrir.addEventListener('click', this.eventToggleModal);
     this.botaoFechar.addEventListener('click', this.eventToggleModal);
-    this.containerModal.addEventListener('click', this.eventToggleModal);
+    this.containerModal.addEventListener('click', this.cliqueForaModal);
   }
 
   init(){
     if(this.botaoAbrir && this.botaoFechar && this.containerModal){
        this.addModalEvent(); 
     }
-    return this
+    return this;
   }
 
   cliqueForaModal(event) {
